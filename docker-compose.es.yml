@@ -3,9 +3,6 @@ version: "3.7"
 services:
   elasticsearch:
     image: elasticsearch:8.11.1
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile.elasticsearch
     environment:
       - node.name=elasticsearch
       - cluster.name=es-docker-cluster
